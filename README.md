@@ -10,6 +10,8 @@ This repository contains Terraform scripts to provision a highly available, secu
 
 ## Directory Structure
 
+
+
 knowledgecity-infrastructure/
 ├── main.tf
 ├── variables.tf
@@ -55,7 +57,7 @@ Outputs After the apply completes, you can view the outputs, such as the RDS end
 
 **terraform output**
 
-##Cleaning Up
+## Cleaning Up
 
 To destroy the infrastructure created by Terraform, run:
 
@@ -67,7 +69,7 @@ Notes
 Ensure that you monitor your AWS usage to stay within your budget.
 Adjust instance types and sizes as needed for performance and cost optimization.
 
-##License
+## License
 This project is licensed under the MIT License.
 
 
