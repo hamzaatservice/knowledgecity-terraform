@@ -11,16 +11,19 @@ This repository contains Terraform scripts to provision a highly available, secu
 ## Directory Structure
 
 knowledgecity-infrastructure/
- main.tf
- variables.tf
- outputs.tf
- modules/
-  vpc/
-  asg/
-  rds/
-  cloudfront/
-  iam/
- README.md
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── modules/
+│ ├── vpc/
+│ ├── asg/
+│ ├── rds/
+│ ├── cloudfront/
+│ └── iam/
+└── README.md
+
+
+Copy
 
 ## Getting Started
 
@@ -29,7 +32,6 @@ knowledgecity-infrastructure/
    ```bash
    git clone https://github.com/yourusername/knowledgecity-infrastructure.git
    cd knowledgecity-infrastructure
-
 Set Up Variables Update the variables.tf file or create a terraform.tfvars file in the root directory with your specific values:
 
 ami_id          = "your-ami-id"
@@ -38,37 +40,37 @@ db_password     = "your-db-password"
 
 Initialize Terraform Run the following command to initialize the Terraform configuration:
 
-terraform init
+**terraform init**
 
 Plan the Infrastructure Execute the following command to see what resources will be created:
 
-terraform plan
+**terraform plan** 
 
 Apply the Changes To create the infrastructure, run:
 
-terraform apply
-
+**terraform apply**
 Type yes when prompted to confirm.
 
 Outputs After the apply completes, you can view the outputs, such as the RDS endpoint and VPC ID:
 
-terraform output
+**terraform output**
 
-Cleaning Up
+##Cleaning Up
+
 To destroy the infrastructure created by Terraform, run:
 
-terraform destroy
-
+**terraform destroy**
 Type yes when prompted to confirm.
 
-
 Notes
+
 Ensure that you monitor your AWS usage to stay within your budget.
 Adjust instance types and sizes as needed for performance and cost optimization.
 
-
-License
+##License
 This project is licensed under the MIT License.
+
+
 
 ### Explanation of the Terraform Setup
 
