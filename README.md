@@ -14,14 +14,23 @@ This repository contains Terraform scripts to provision a highly available, secu
 
 knowledgecity-infrastructure/
 ├── main.tf
+
 ├── variables.tf
+
 ├── outputs.tf
+
 ├── modules/
+
 │ ├── vpc/
+
 │ ├── asg/
+
 │ ├── rds/
+
 │ ├── cloudfront/
+
 │ └── iam/
+
 └── README.md
 
 
@@ -37,7 +46,9 @@ Copy
 Set Up Variables Update the variables.tf file or create a terraform.tfvars file in the root directory with your specific values:
 
 ami_id          = "your-ami-id"
+
 db_username     = "your-db-username"
+
 db_password     = "your-db-password"
 
 Initialize Terraform Run the following command to initialize the Terraform configuration:
